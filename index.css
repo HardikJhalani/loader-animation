@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #0d101e;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    animation: logo 3s 1 ease-in-out;
+}
+
+@keyframes logo {
+    0% {
+        transform: scale(0.5);
+        /* opacity: 0; */
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* main section  */
+
+.main {
+    display: none;
+}
